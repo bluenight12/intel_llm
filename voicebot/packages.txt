@@ -1,1 +1,4 @@
 ffmpeg
+ffprove
+ffmpeg-python
+ffprove-python
