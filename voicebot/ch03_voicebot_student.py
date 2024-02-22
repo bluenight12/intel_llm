@@ -47,10 +47,10 @@ def TTS(response):
         data = f.read()
         b64 = base64.b64encode(data).decode()
         md = f"""
-        <audio autoplay="True">
-        <source src="data:audio/mp3;base64.{b64}" type="audio/mp3">
-        </audio>
-        """
+            <audio autoplay="True">
+            <source src="data:audio/mp3;base64.{b64}" type="audio/mp3">
+            </audio>
+            """
         st.markdown(md, unsafe_allow_html=True,)
     # 파일 삭제
     os.remove(filename)
